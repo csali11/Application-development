@@ -1,6 +1,7 @@
-# TO-DO lista
+﻿# TO-DO lista
 
 # Funkcionális követelmények:
+
 A funkciók elérése autentikációhoz kötött. A családtagoknak van egy felhasználó neve és egy jelszava,
 amivel a teendőiket tudják kezelni, megnézni. Bejelentkezés után lesznek elérhetőek a funkciók.
 
