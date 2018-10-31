@@ -1,5 +1,7 @@
 package hu.elte.inf.nfzjwg.FamilyToDo.model;
 
+
+import hu.elte.inf.nfzjwg.FamilyToDo.model.ToDo;
 import lombok.Data;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -10,47 +12,26 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Column;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.ManyToMany;
-
-import javax.persistence.JoinColumn;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "todo")
+@Table(name = "destination")
 @Entity
 
-public class ToDo {
+public class Destination {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
 
     @Column
-    private String author;
-
-    @Column
-    private String text;
+    private String des;
     
-    @ManyToMany
-    private List<Items> items;
+    @Transient
+    @OneToMany(mappedBy="destination")
+    private List<ToDo> todo;
 
-    @ManyToOne
-    @JoinColumn
-    @JsonIgnore
-    private Family family;
-
-    @ManyToOne
-    @JoinColumn
-    @JsonIgnore
-    private Destination destination;
-
-    
-   
  
-   
 }

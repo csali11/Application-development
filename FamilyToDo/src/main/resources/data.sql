@@ -17,13 +17,23 @@ INSERT INTO family(id, name, age, premission)
 VALUES 
     (6, 'Marry', 4, 'child' );
  
-INSERT INTO todo(id, author, text, family_id)
+INSERT INTO DESTINATION(id, des)
 VALUES 
-    (1, 'Marry', 'Dad has to chop some logs.', 1 );
+    (1,'garden');
+INSERT INTO DESTINATION(id, des)
+VALUES 
+    (2,'kitchen');
+/*INSERT INTO DESTINATION(id, des)
+VALUES 
+    (3,'bedroom');
+    */
+INSERT INTO todo(id, author, text, family_id,destination_id)
+VALUES 
+    (1, 'Marry', 'Dad has to chop some logs.', 1 ,1);
 
-INSERT INTO todo(id, author, text, family_id)
+INSERT INTO todo(id, author, text, family_id,destination_id)
 VALUES 
-    (2, 'Eva', 'Ted has to cut some onions.', 1 );
+    (2, 'Eva', 'Ted has to cut some onions.', 1, 2);
 INSERT INTO items(id, name)
 VALUES 
     (1, 'axe' );
@@ -36,4 +46,3 @@ VALUES
 INSERT INTO TODO_ITEMS(to_do_id, items_id)
 VALUES 
     (2,2);
-
