@@ -32,6 +32,7 @@ public class Items {
     @Transient
     @ManyToMany
     private List<ToDo> todo;
+    
 
  
 }

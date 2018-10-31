@@ -33,6 +33,6 @@ public class Family {
     private String permission;
 
     @OneToMany(mappedBy="family")
-    private List<ToDo> todo;
+    private List<ToDo> todo;  
 
 }
