@@ -25,7 +25,9 @@ Teendő kipipálása - a családtag ezzel jelezheti, hogy a teendőt elvégezte
 
 Eszköz - adott teendőhöz szükséges használati tárgy
 
-# Szerepkörök:
-Gyerek - olyan családtag, aki listázhat, adhat hozzá teendőt, eszközt, kipipálhat teendőt
+Helyszín - adott teendő elvégzési helye
 
-Szülő - olyan családtag, aki listázhat, adhat hozzá teendőt, eszközt, kipipálhat teendőt, módosíthat meglévő teendőt és törölhet
+# Szerepkörök:
+Gyerek - olyan családtag, aki listázhat, adhat hozzá teendőt,kipipálhat teendőt
+
+Szülő - olyan családtag, aki listázhat, adhat hozzá teendőt, eszközt, helyszínt, kipipálhat teendőt, módosíthat meglévő teendőt és törölhet
