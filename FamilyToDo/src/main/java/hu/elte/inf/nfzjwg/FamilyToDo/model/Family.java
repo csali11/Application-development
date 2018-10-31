@@ -30,9 +30,9 @@ public class Family {
     private int age;
 
     @Column
-    private String premission;
+    private String permission;
 
-  @OneToMany(mappedBy="family")
-  private List<ToDo> todo;
+    @OneToMany(mappedBy="family")
+    private List<ToDo> todo;
 
 }

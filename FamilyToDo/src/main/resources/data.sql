@@ -1,19 +1,19 @@
-INSERT INTO family(id, name, age, premission)
+INSERT INTO family(id, name, age, permission)
 VALUES 
     (1, 'Ted', 47, 'parent' );
-INSERT INTO family(id, name, age, premission)
+INSERT INTO family(id, name, age, permission)
 VALUES 
     (2, 'Eva', 44, 'parent' );
-INSERT INTO family(id, name, age, premission)
+INSERT INTO family(id, name, age, permission)
 VALUES 
     (3, 'Kate', 14, 'child' );
-    INSERT INTO family(id, name, age, premission)
+    INSERT INTO family(id, name, age, permission)
 VALUES 
     (4, 'John', 12, 'child' );
-INSERT INTO family(id, name, age, premission)
+INSERT INTO family(id, name, age, permission)
 VALUES 
     (5, 'Mark', 9, 'child' );
-INSERT INTO family(id, name, age, premission)
+INSERT INTO family(id, name, age, permission)
 VALUES 
     (6, 'Marry', 4, 'child' );
  
@@ -23,10 +23,7 @@ VALUES
 INSERT INTO DESTINATION(id, des)
 VALUES 
     (2,'kitchen');
-/*INSERT INTO DESTINATION(id, des)
-VALUES 
-    (3,'bedroom');
-    */
+
 INSERT INTO todo(id, author, text, family_id,destination_id)
 VALUES 
     (1, 'Marry', 'Dad has to chop some logs.', 1 ,1);
