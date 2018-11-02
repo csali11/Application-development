@@ -14,7 +14,7 @@ import javax.persistence.Column;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+//@NoArgsConstructor
 @Entity
 @Table(name = "family")
 public class Family {
@@ -34,5 +34,12 @@ public class Family {
 
     @OneToMany(mappedBy="family")
     private List<ToDo> todo;  
-
+    /**Constructor made because @AllArgsConstructor and @NoArgsConstructor are making some troubles when inserting.(at least on my PC) */
+    public Family(String name, int age, String premission,List<ToDo> todo){
+        this.age=age;
+        this.name=name;
+        this.permission=premission;
+        this.todo=todo;
+    }
+    
 }

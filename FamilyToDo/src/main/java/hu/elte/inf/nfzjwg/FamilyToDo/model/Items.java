@@ -8,6 +8,9 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,11 +31,11 @@ public class Items {
 
     @Column
     private String name;
-    
-    @Transient
+
+    @Transient 
+    @JsonIgnore
     @ManyToMany
     private List<ToDo> todo;
-    
 
  
 }

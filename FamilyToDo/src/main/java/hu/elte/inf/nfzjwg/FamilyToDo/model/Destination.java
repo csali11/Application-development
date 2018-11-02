@@ -15,8 +15,7 @@ import javax.persistence.Column;
 import javax.persistence.*;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+//@AllArgsConstructor
 @Table(name = "destination")
 @Entity
 
@@ -29,9 +28,10 @@ public class Destination {
     @Column
     private String des;
     
-    @Transient
+  
     @OneToMany(mappedBy="destination")
     private List<ToDo> todo;
 
- 
+    public Destination(String des){this.des = des;}
+    public Destination(){}
 }
