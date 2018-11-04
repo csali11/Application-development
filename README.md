@@ -53,13 +53,10 @@ Szülő - olyan családtag, aki listázhat, adhat hozzá teendőt, eszközt, hel
 
 Négy táblát és egy összekötő táblát használunk. 
 
-Family: a családtagok listája – név, életkor, jogkör (szülő, vagy gyerek)
-
-Destination: a teendő elvégzési helyszíne (pl. kutyasétáltatás - park)
-
-Items: a teendő elvégzéséhez lehetségesen szükséges eszközök (pl. vásárlás – szatyor, autó)
-
-To-Do: a teendők listája – szerző, teendő, eszközök, helyszín, elvégzett-e
+* Family: a családtagok listája – név, életkor, jogkör (szülő, vagy gyerek)
+* Destination: a teendő elvégzési helyszíne (pl. kutyasétáltatás - park)
+* Items: a teendő elvégzéséhez lehetségesen szükséges eszközök (pl. vásárlás – szatyor, autó)
+* To-Do: a teendők listája – szerző, teendő, eszközök, helyszín, elvégzett-e
 
 #### Könyvtárstruktúra ####
 
