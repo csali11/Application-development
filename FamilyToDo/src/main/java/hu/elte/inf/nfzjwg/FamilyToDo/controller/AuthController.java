@@ -22,6 +22,10 @@ public class AuthController {
  //   @Autowired
  //   private PasswordEncoder passwordEncoder;
     
+     /**
+     * This function logs in.
+     * @return a status.
+     */
     @RequestMapping("/login")
     public ResponseEntity<User> login(@RequestBody User user) {
         Optional<User> currentUser = userRepository.findByUserNameAndPassword(user.getUserName(), user.getPassword());
@@ -35,12 +39,20 @@ public class AuthController {
         }
     }
     
+     /**
+     * This function logs out.
+     * @return a status.
+     */
     @RequestMapping("/logout")
     public ResponseEntity logout() {
         sessionService.setCurrentUser(null);
         return ResponseEntity.ok(false);
     }
     
+     /**
+     * This function returns current user.
+     * @return a user.
+     */
     @GetMapping("/user")
     public ResponseEntity getUser() {
         if (sessionService.getCurrentUser() == null) {

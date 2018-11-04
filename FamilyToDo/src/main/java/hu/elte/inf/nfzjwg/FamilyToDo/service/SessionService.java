@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
 
 @Service
-@SessionScope //megőrzi a benne lévő propertiket kérések között ~ adattároláésra használjuk
+@SessionScope //keeps properties between requests <-- used for data storage
 @Data
 public class SessionService {
     private User currentUser;

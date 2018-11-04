@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
-    //felhasználónév és jelszó alapján keres az adatbázisban
-    Optional<User> findByUserNameAndPassword(String userName, String password); //vagy megtalálja vagy nem <-- optional
+    //searches user and password in the database
+    Optional<User> findByUserNameAndPassword(String userName, String password); // founds or not <-- optional
 }

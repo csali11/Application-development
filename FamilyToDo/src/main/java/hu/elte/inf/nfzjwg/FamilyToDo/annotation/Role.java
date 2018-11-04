@@ -10,5 +10,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Role {
-    User.Role[] value() default {User.Role.GUEST}; //user role tömböt ad vissza
+    User.Role[] value() default {User.Role.GUEST}; // returns user role array
 }
