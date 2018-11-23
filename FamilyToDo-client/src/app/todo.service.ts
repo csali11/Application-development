@@ -15,6 +15,7 @@ export class TodoService {
 
   constructor() { }
 
+
   findAll(): Observable<Todo[]> {
     return of([
       {
@@ -39,6 +40,7 @@ export class TodoService {
       },
     ]);
   }
+  
 
   findByPredicate(predicate): Observable<Todo[]> {
     return this.findAll().pipe(map(x => x.filter(predicate)));

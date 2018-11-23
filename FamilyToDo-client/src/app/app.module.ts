@@ -14,6 +14,9 @@ import { SearchComponent } from './search/search.component';
 import { SearchResultPageComponent } from './search-result-page/search-result-page.component';
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { ItemPageComponent } from './item-page/item-page.component';
+import { ListingOnlyItemsComponent } from './listing-only-items/listing-only-items.component';
+import { AbutPageComponent } from './abut-page/abut-page.component';
 const routes: Routes = [
   {
     path: 'home',
@@ -24,6 +27,14 @@ const routes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'items',
+    component: ItemPageComponent
+  },
+  {
+    path: 'about',
+    component: AbutPageComponent
   },
   {
     path: 'search/:keywords',
@@ -53,7 +64,11 @@ const routes: Routes = [
     SearchComponent,
     SearchResultPageComponent,
     SignInPageComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    ItemPageComponent,
+    ListingOnlyItemsComponent,
+    AbutPageComponent,
+
    
   ],
   imports: [
