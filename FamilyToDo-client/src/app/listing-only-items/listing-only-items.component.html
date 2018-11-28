@@ -1,5 +1,10 @@
-<h1>Items:</h1>    
-<div  *ngFor="let todo of todos | async">
-  <app-item-list [items]="todo.items"></app-item-list>
-  </div>
+<div  class="card text-white bg-info mb-3" style="max-width: 18rem;" *ngFor="let item of items | async">
+    <div class="card-body">
+       <p class="card-text">{{item.name }}</p>
+        <div *ngIf="currentUser | async" class="post-actions">
+          <a routerLink="/item/{{ item.postNo }}/edit" class="card-link">Edit</a>
+          <a routerLink="/item/{{ item.postNo }}/confirm-delete" class="card-link">Delete</a>
+        </div>
+      </div>
+</div>
   

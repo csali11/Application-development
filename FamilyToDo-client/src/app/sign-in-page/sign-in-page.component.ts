@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from '../user-service.service';
+
+type UserCredentials = {
+  username: string,
+  password: string
+};
 
 @Component({
   selector: 'app-sign-in-page',
@@ -7,9 +14,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInPageComponent implements OnInit {
 
-  constructor() { }
+  private userCredentials: UserCredentials;
+
+  constructor(private userService: UserService, private router: Router) {
+    this.userCredentials = { username: '', password: '' };
+  }
 
   ngOnInit() {
+  }
+
+  handleSignIn(isFormValid) {
+    if (isFormValid) {
+      this.userService.setCurrentUser({ firstName: this.userCredentials.username });
+      this.router.navigateByUrl('/home');
+    }
   }
 
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Todo } from '../todo.service';
 import { Observable } from 'rxjs';
+
+import { Items, ItemsService } from '../items.service';
+import { User, UserService } from '../user-service.service';
 
 @Component({
   selector: 'app-listing-only-items',
@@ -8,10 +10,13 @@ import { Observable } from 'rxjs';
   styleUrls: ['./listing-only-items.component.css']
 })
 export class ListingOnlyItemsComponent implements OnInit {
-  @Input() private todos: Observable<Todo[]>;
+  @Input() private items: Observable<Items[]>;
+  private currentUser: Observable<User>;  
   
-  constructor() { }
+  constructor(private userService : UserService) { }
+
 
   ngOnInit() {
+    this.currentUser=this.userService.getCurrentUser();
   }
 }

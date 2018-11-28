@@ -1,0 +1,13 @@
+
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;" *ngFor="let f of family | async">
+    <div class="card-body">
+       <p class="card-text"> Name: {{f.name }}</p>
+       <p class="card-text">Age: {{f.age }}</p>
+       <p class="card-text">Permission: {{f.permission }}</p>
+        <div *ngIf="currentUser | async" class="post-actions">
+          <a routerLink="/f/{{ f.postNo }}/edit" class="card-link">Edit</a>
+          <a routerLink="/f/{{ f.postNo }}/confirm-delete" class="card-link">Delete</a>
+        </div>
+      </div>
+</div>
+  

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Todo, TodoService } from '../todo.service';
+import { ItemsService } from '../items.service';
 
 @Component({
   selector: 'app-item-page',
@@ -8,10 +9,8 @@ import { Todo, TodoService } from '../todo.service';
   styleUrls: ['./item-page.component.css']
 })
 export class ItemPageComponent implements OnInit {
-
- 
-
-  constructor(private todoService: TodoService) { }
+  
+  constructor(private itemsService: ItemsService) { }
   ngOnInit() {
   }
 }

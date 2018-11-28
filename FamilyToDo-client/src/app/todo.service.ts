@@ -21,22 +21,22 @@ export class TodoService {
       {
         author:"Mary",
         text:"Dad has to chop some logs.",
-        items:["axe"]
+        items:["Axe"]
       },
       {
         author:"John",
         text:"Clean the livingroom",
-        items:["towel"]
+        items:["Towel"]
       },
       {
         author:"John",
         text:"Marry has homework to do.",
-        items:["notebook"]
+        items:["Notebook"]
       },
       {
         author:"Bill",
         text:"I have to clean my room.",
-        items:["broom"]
+        items:["Broom"]
       },
     ]);
   }
