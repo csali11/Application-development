@@ -102,12 +102,64 @@ Négy táblát és egy összekötő táblát használunk.
 
 ![ide kattintva elérhető az szekvenciadiagram](pictures/vegpont.png)
 
+## Működő prototípus ##
 
+#### Használati eset diagram ####
 
+![ide kattintva elérhető a use-case diagram](pictures/use-case.png)
 
+#### Fejlesztői környezet ####
 
+* Git verziókezeló, Github
+* Angular
+* Bootstrap
+* Visual Studio Code lokális IDE
+* Indítás: cmd, projektkönyvtárban függőségek telepítése: npm install, majd ng serve, böngészőben localhost:4200
 
+#### Könyvtárstruktúra ####
 
+* app
+	* about-page
+	* destination-list
+	* destination-page
+	* family-list
+	* family-page
+	* header
+	* item-list
+	* item-page
+	* listing-only-items
+	* page-container
+	* page-not-found
+	* search
+	* search-result-page
+	* sidebar
+	* sign-in-page
+	* sign-up-page
+	* todo-list
+* services
+	* destination
+	* family
+	* items
+	* todo
+	*user-service
+* assets
+	* images
+
+#### Oldalvázlat ####
+
+![ide kattintva elérhető az oldalvázlat](pictures/oldalterv.png)
+
+## Kész alkalmazás ##
+
+#### Kliensoldali szolgáltatások ####
+
+* A főoldalon megjelenik a tennivalók listája, ki adta hozzá, mi az adott feladat és milyen eszközöket igényel.
+* Az eszközökre kattintva megjelenik az eszközök listája.
+* A helyszínekre kattintva megjelenik a helyszínek listája.
+* A családra kattintva megjelennek a családtagok adatai, név, életkor, jogkör.
+* A bejelentkezésre/regisztrációra kattintva megjelenik egy kitöltendő űrlap, amelyet kitöltve lehet továbblépni a főoldalra, és elérhetővé válnak új funkciók.
+* Lehetőség van szűrésre a teendők között.
+* Lehetőség van szerkesztésre/törlésre/hozzáadásra bejelentkezés után. 
 
 
 
