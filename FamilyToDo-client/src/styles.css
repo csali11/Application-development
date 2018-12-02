@@ -1,1 +1,14 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+body {
+    background-image: url("assets/images/bg.jpg");
+    background-color: #cccccc;
+ }
+
+a {
+    color: #0a676f;
+}
+
+a:hover {
+    color: #07454b;
+}

@@ -1,4 +1,4 @@
-<div  class="card text-white bg-success mb-3" style="max-width: 18rem;" *ngFor="let destination of destinations | async">
+<div  class="card text-white mb-3" style="max-width: 18rem;" *ngFor="let destination of destinations | async">
     <div class="card-body">
        <p class="card-text">{{destination.name }}</p>
         <div *ngIf="currentUser | async" class="post-actions">
@@ -6,4 +6,4 @@
           <a routerLink="/destination/{{ destination.postNo }}/confirm-delete" class="card-link">Delete</a>
         </div>
       </div>
-</div>
+</div> 

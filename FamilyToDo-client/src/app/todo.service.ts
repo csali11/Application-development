@@ -21,22 +21,26 @@ export class TodoService {
       {
         author:"Mary",
         text:"Dad has to chop some logs.",
-        items:["Axe"]
+        items:["Axe"],
+        image:"../assets/images/mary.jpg"
       },
       {
         author:"John",
         text:"Clean the livingroom",
-        items:["Towel"]
+        items:["Towel"],
+        image:"../assets/images/john.jpg"
       },
       {
         author:"John",
         text:"Marry has homework to do.",
-        items:["Notebook"]
+        items:["Notebook"],
+        image:"../assets/images/john.jpg"
       },
       {
         author:"Bill",
         text:"I have to clean my room.",
-        items:["Broom"]
+        items:["Broom"],
+        image:"../assets/images/bill.jpg"
       },
     ]);
   }

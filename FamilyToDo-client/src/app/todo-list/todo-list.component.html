@@ -1,11 +1,18 @@
-<div div class="card bg-light mb-3" style="max-width: 18rem;" *ngFor="let todo of todos | async">
+<div div class="card bg-light mb-3" style="max-width: 40%;" *ngFor="let todo of todos | async">
     <div class="card-body text-dark">
+    <img src="{{ todo.image }}" class="rounded float-right" alt="author-image">
     <h5 class="card-title">{{ todo.author}}</h5>
-    <p class="card-text">{{ todo.text }}</p>
+    <div class="form-group form-check">
+      <input *ngIf="currentUser | async" class="post-actions" type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1"><p class="card-text">{{ todo.text }}</p></label>
+    </div>
+   
     <app-item-list [items]="todo.items"></app-item-list>
+    
     <div *ngIf="currentUser | async" class="post-actions">
       <a routerLink="/todo/{{ todo.postNo }}/edit" class="card-link">Edit</a>
       <a routerLink="/todo/{{ todo.postNo }}/confirm-delete" class="card-link">Delete</a>
     </div>
   </div>
 </div>
+ 
